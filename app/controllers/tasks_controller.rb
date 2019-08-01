@@ -11,7 +11,6 @@ class TasksController < ApplicationController
 
    def new
        @task = Task.new
-       @tasks = Task.new
    end
 
    def create
@@ -27,7 +26,6 @@ class TasksController < ApplicationController
 
    def edit
         @task = Task.find(params[:id])
-        @tasks = Task.find(params[:id])
    end
 
    def update
